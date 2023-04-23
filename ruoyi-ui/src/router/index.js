@@ -75,6 +75,19 @@ export const constantRoutes = [
     ]
   },
   {
+    path: '',
+    component: Layout,
+    redirect: 'dataEntry',
+    children: [
+      {
+        path: 'dataEntry',
+        component: () => import('@/views/dataEntry'),
+        name: 'dataEntry',
+        // meta: { title: '数据录入', icon: 'dashboard', affix: true }
+      }
+    ]
+  },
+  {
     path: '/user',
     component: Layout,
     hidden: true,

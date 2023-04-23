@@ -15,6 +15,10 @@
         web服务入口
     </description>
 
+    <properties>
+        <lombok.version>1.18.26</lombok.version>
+    </properties>
+
     <dependencies>
 
         <!-- spring-boot-devtools -->
@@ -59,6 +63,13 @@
         <dependency>
             <groupId>com.ruoyi</groupId>
             <artifactId>ruoyi-generator</artifactId>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
         </dependency>
 
     </dependencies>
